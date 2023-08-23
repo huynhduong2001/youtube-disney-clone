@@ -12,7 +12,7 @@ const Originals = (props) => {
           originals.map((original, key) => (
             <Wrap key={key}>
               {original.id}
-              <Link to="/">
+              <Link to={`/detail/` + original.id}>
                 <img src={original.cardImg} alt={original.title} />
               </Link>
             </Wrap>

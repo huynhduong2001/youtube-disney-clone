@@ -12,7 +12,7 @@ const Trending = (props) => {
           trending.map((trend, key) => (
             <Wrap key={key}>
               {trend.id}
-              <Link to="/">
+              <Link to={`/detail/` + trend.id}>
                 <img src={trend.cardImg} alt={trend.title} />
               </Link>
             </Wrap>
